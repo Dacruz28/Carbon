@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Garantir que html e body ocupem toda a altura da viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+ 
+
+
+/* navbar*/
+.container-fluid{
+    background: #0033C6;  
+    margin: -8px;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.cabeçalho{
+  background-color: #0033C6;
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+.cabeçalho, h1{
+  color: #fff;
+  align-items: center;
+  justify-content:space-around;
+
+    }
+
+
+
+
+a.navbar-brand{
+    color: #fff;
+    font-weight: bold; /* Ajusta o peso da fonte */
+    margin: 0; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+#navbarSupportedContent{
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+a.nav-link{
+    color: #fff;
+    align-items: center;
+    font-weight: bold; /* Ajusta o peso da fonte */
+    font-size: 15px;
+    margin: 0; 
+    padding: 0;
+    
+
+}
+.logo  {
+  display: inline;
+  font-family: Arial, sans-serif;
+
+}
+
+
+ul li {
+  display: inline;
+  margin: 15px;
+      
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Tahoma, sans-serif;
+
+
+}
+
+
+
+
+  
+
+
+
+
+/* carrosel*/
+.carousel-item img {
+  max-width: 100%; /* Garante que o carrossel não ultrapasse a largura do contêiner pai */
+  height: auto;
+  margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+  margin-right: 5%;
+}
+
+#carouselExample {
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para visibilidade */
+    border-radius: 50%; 
+  }
+  .carousel-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 400px; 
+  }
+ 
+
+
+
+
+  
+
+
+/* footer*/
+ footer {
+    background: #25262B;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+
+}
+.footer-links {
+margin-bottom: 2%;
+}
+
+.footer-links a{
+    color: #fff;
+    align-items: flex-end;
+    font-weight: bold; 
+    font-size: 15px;
+    margin: 3%;
+
+}
+.footer-social a{
+    color: #fff;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 3%;
+
+}
+.footer-social img {
+  width: 24px; 
+}
+
+
+
+
+
+/* O conteúdo principal da página */
+main {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+   
+   /* From Uiverse.io by krlozCJ */ 
+.container {
+  position: relative;
+  --size-button: 40px;
+  color: white;
+}
+
+.input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: #191A1E;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:focus + .icon,
+.input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.container .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.container .icon svg {
+  width: 100%;
+  height: 100%;
+}
