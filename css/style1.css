@@ -41,7 +41,7 @@ nav.navbar {
     position: absolute; /* Deixar a navbar flutuando */
     top: 0;
     width: 100%;
-    height: 13%;
+    height: auto;
     z-index: 20; /* Certificando que a navbar fique acima do conteúdo */
     border: none; /* Removendo qualquer borda da navbar */
      /*border: 1px solid #002198;  Define uma borda verde */
@@ -68,9 +68,9 @@ nav.rolagem{
 /* Ajustes na navbar */
 .navbar-nav .nav-link {
     color: #333333 !important; /* Tornando o texto da navbar branco para melhor contraste */
-    font-size: 16px;
+    font-size: 14px;
     padding: 30px;
-    margin-left: 50px;
+    margin-left: 30px;
     font-family:Arial, Helvetica, sans-serif;
     
 }
@@ -89,88 +89,68 @@ nav.rolagem{
 /* Barra de pesquisa */
 
 
-.input {
-    width: 20px;
-    transition: width 0.4s ease;
-}
-
-.input:focus {
-    width: 100px;
-}
 .input-container {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: 50px;
-
-  }
-  
-
-  .input {
-    width: 10px;
-    height: 20px;
-    border-radius: 20px;
-    
-    outline: none;
-    padding: 18px 16px;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .7s ease-in-out;
-  }
-  
-  .input::placeholder {
-    color: transparent;
-  }
-  
-  .input:focus::placeholder {
-    color: rgb(131, 128, 128);
-  }
-  
-  .input:focus,.input:not(:placeholder-shown) {
-    background-color: #fff;
-    border: 1px solid ;
-    width: 290px;
-    cursor: none;
-    padding: 18px 16px 18px 45px;
-  }
-  
-  .icon {
-    position: absolute;
-    left: 2;
-    right: 25;
-    height: 29px;
-    width: 30px;
-    background-color: #fff;
-    border-radius: 99px;
-    z-index: -1;
-    fill: #3D4753;
-    border: 1px solid #3D4753
-  }
-  
-  .input:focus + .icon,.input:not(:placeholder-shown) + .icon {
-    z-index: 0;
-    background-color: transparent;
-    border: none;
-  }
-  
-.icone_nav{
-width: 65px;
-height: 65px;
-
 }
 
-
-
-
 .input {
-    border: 1px solid  #333333;
-    padding: 5px 10px;
-    width: 200px;
+    border: 1px solid #333333;
+    padding: 10px 15px;
+    width: 200px; /* Largura inicial do campo de pesquisa */
+    height: 40px; /* Altura do campo */
+    border-radius: 20px; /* Bordas arredondadas */
+    outline: none;
+    transition: width 0.5s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transições mais suaves */
+    background-color: transparent; /* Inicialmente transparente */
+    display: none; /* Escondido inicialmente */
+}
+
+.input:focus {
+    width: 290px; /* Largura quando focado */
+    background-color: #fff; /* Cor de fundo ao focar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ao focar */
+    cursor: text; /* Cursor para texto ao focar */
+}
+
+.input::placeholder {
+    color: transparent; /* Placeholder invisível inicialmente */
+    transition: color 0.3s ease; /* Transição suave para o placeholder */
+}
+
+.input:focus::placeholder {
+    color: rgb(131, 128, 128); /* Cor do placeholder ao focar */
+}
+
+.input:not(:placeholder-shown) {
+    background-color: #fff; /* Cor de fundo quando há texto */
+    border: 1px solid #333333; /* Borda visível */
 }
 
 .icon {
     position: absolute;
     right: 10px;
+    height: 20px; /* Altura do ícone */
+    width: 20px; /* Largura do ícone */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.input-container:hover .icon {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+.icone_nav {
+    width: 65px;
+    height: 65px;
+}
+
+/* Adiciona visibilidade ao campo de entrada quando ativado */
+.show {
+    display: block; /* Exibe o campo */
+    transition: display 0.5s ease; /* Transição suave ao exibir */
 }
 
 .box1 {
@@ -266,6 +246,56 @@ height: 65px;
     
 }
 
+/* navbar */
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280,0,0,.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(90deg); /* Gira o ícone ao abrir o menu */
+}
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #ccc;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+/* Efeito de hover nos links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1db954; /* Muda a cor no hover (verde, por exemplo) */
+    background-color: rgba(255, 255, 255, 0.1); /* Muda o fundo no hover */
+}
+
+/* Efeito para o link ativo */
+.navbar-nav .nav-link.active {
+    color: #1db954;
+    font-weight: bold; /* Torna o link ativo mais destacado */
+    border-bottom: 2px solid #1db954; /* Linha abaixo do item ativo */
+}
 /* navbar */
 
 .navbar-toggler-icon {
