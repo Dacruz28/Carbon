@@ -165,7 +165,7 @@ nav.rolagem{
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     padding-top: 50px;
-    margin: 20px 0; /* Espaçamento externo */
+    margin: 10px 0; /* Espaçamento externo */
     font-size: 1.5rem; /* Tamanho de fonte maior */
     color: #333; /* Cor do texto */
 }
@@ -360,26 +360,37 @@ nav.rolagem{
     align-items: center; /* Centraliza os itens verticalmente */
     flex-wrap: wrap; /* Permite que os cards fiquem lado a lado ou empilhados em telas menores */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 50px; /* Reduz o padding */
+    /* padding: 50px; Reduz o padding */
     margin: 20px 0;
     font-size: 1.5rem;
     color: #333;
-    gap: 20px; /* Aumenta o espaçamento entre os cards */
 }
 
-
-/* Ajuste para os cards */
-.box2 .card {
-    max-width: 200px; /* Reduz a largura máxima dos cards */
-    min-width: 150px; /* Define uma largura mínima */
+.card2{
+    max-width: 450px; /* Reduz a largura máxima dos cards */
+    min-width: 250px; /* Define uma largura mínima */
     flex: 1; /* Faz com que os cards ocupem o mesmo espaço */
     height: 60vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra dos cards */
     margin: 0 auto; /* Centraliza os cards */
     font-size: 18px;
-    background-color: #f0f0f0;
+     padding-left: 100px; 
+     padding-right: 100px; 
+     padding-top: 60px;
+    background-color: #fff;
 }
+/* Ajuste para os cards */
+.box2 .card3 {
+    max-width: 380px; /* Reduz a largura máxima dos cards */
+    min-width: 250px; /* Define uma largura mínima */
+    flex: 1; /* Faz com que os cards ocupem o mesmo espaço */
+    height: 60vh;
+    margin: 0 auto; /* Centraliza os cards */
+    font-size: 18px;
+    padding-left: 50px; 
+     padding-right: 50px; 
+     padding-top: 60px;
+     background-color: #3D4753;
+    }
 
 /* Estilo responsivo */
 @media (max-width: 768px) {
@@ -426,12 +437,43 @@ nav.rolagem{
 }
 
 /* cor letra card */
+.box2 .card-title1 {
+    color: #3D4753;; /* Texto mais escuro para melhor contraste */
+    text-align: center;
+    padding-top: 15px;
+    font-size: 23px;
+    text-decoration: none;
+
+}
 .box2 .card-title {
-    color: #3D4753; /* Texto mais escuro para melhor contraste */
+    color: #fff; /* Texto mais escuro para melhor contraste */
+    text-align: center;
+    padding-top: 15px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
 }
 
+   
 .box2 .card-text {
-    color: #555; /* Cor mais escura para o texto, facilitando a leitura */
+    color: #fff; /* Cor mais escura para o texto, facilitando a leitura */
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.box2 .card-text1 {
+    color: #3D4753; /* Cor mais escura para o texto, facilitando a leitura */
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+
+}
+p.card-text{
 }
 
 .box2 .btn:hover {
@@ -471,124 +513,4 @@ nav.rolagem{
 
 
 
-/* footer*/
-
-footer {
-    background-color: #25262B; /* Fundo escuro */
-    color: #fff;
-    padding: 40px 20px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 20px;
-}
-
-.footer-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #1db954;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-section form {
-    display: flex;
-}
-
-.footer-section input[type="email"] {
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 10px;
-    flex: 1;
-}
-
-.footer-section button {
-    padding: 10px 20px;
-    background-color: #FF5000;
-    border: none;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-bottom p {
-    font-size: 0.9em;
-}
-
-
-
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #1db954; /* Muda para verde ao passar o mouse */
-}
-
-.footer-section button:hover {
-    background-color: #007bff; /* Muda a cor do botão ao passar o mouse */
-}
-
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 30px;
-    }
-}
-
-/* animação copyright*/
-.footer-bottom p {
-    font-size: 0.8em;
-    color: #bbb;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom p:hover {
-    color: #1db954; /* Muda de cor ao passar o mouse */
-}
-
-footer {
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave acima do footer */
-    border-top: 2px solid #ccc; /* Linha verde no topo do footer */
-}
 

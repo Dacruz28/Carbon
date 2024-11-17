@@ -1,0 +1,149 @@
+/* navbar */
+
+/* Navbar  */
+nav.navbar {
+    background-color:  #fff; 
+    position: absolute; /* Deixar a navbar flutuando */
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20; /* Certificando que a navbar fique acima do conteúdo */
+    border: none; /* Removendo qualquer borda da navbar */
+     /*border: 1px solid #002198;  Define uma borda verde */
+     position: fixed;
+     top: 0;
+     left: 0;
+     box-shadow: 0px 0px 5px #888888;
+
+
+}
+nav.rolagem{
+    background-color: #25262B;
+}
+
+/* Ajustes na navbar */
+.navbar-nav .nav-link {
+    color: #333333 !important; /* Tornando o texto da navbar branco para melhor contraste */
+    font-size: 14px;
+    padding: 30px;
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.navbar-nav .nav-link:hover {
+    color: #eaeaea;
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280,0,0,.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(90deg); /* Gira o ícone ao abrir o menu */
+}
+
+.icone_nav {
+    width: 65px;
+    height: 65px;
+}
+.logo {
+    width: 217px;
+    height: 70px;
+    align-items: baseline;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #ccc;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+/* Efeito de hover nos links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1db954; /* Muda a cor no hover (verde, por exemplo) */
+    background-color: rgba(255, 255, 255, 0.1); /* Muda o fundo no hover */
+}
+
+/* Efeito para o link ativo */
+.navbar-nav .nav-link.active {
+    color: #1db954;
+    font-weight: bold; /* Torna o link ativo mais destacado */
+    border-bottom: 2px solid #1db954; /* Linha abaixo do item ativo */
+}
+/* navbar */
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280,0,0,.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(90deg); /* Gira o ícone ao abrir o menu */
+}
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #ccc;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+/* Efeito de hover nos links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1db954; /* Muda a cor no hover (verde, por exemplo) */
+    background-color: rgba(255, 255, 255, 0.1); /* Muda o fundo no hover */
+}
+
+/* Efeito para o link ativo */
+.navbar-nav .nav-link.active {
+    color: #1db954;
+    font-weight: bold; /* Torna o link ativo mais destacado */
+    border-bottom: 2px solid #1db954; /* Linha abaixo do item ativo */
+}
+

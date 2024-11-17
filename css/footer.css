@@ -1,0 +1,167 @@
+/* footer*/
+
+footer {
+    background-color: #25262B; /* Fundo escuro */
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section1 {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+
+
+.footer-section1 h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+
+/* links */
+.footer-section1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section1 ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer-section ul li a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+/*  */
+
+.footer-section form {
+    display: flex;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color: #FF5000;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
+
+
+
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #C65227; /* Muda para verde ao passar o mouse */
+}
+.footer-section1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section1 ul li a:hover {
+    color: #C65227; /* Muda para verde ao passar o mouse */
+}
+.footer-section button:hover {
+    background-color: #C65227;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+  
+    .footer-section1 {
+        display: none;
+    }
+
+    .footer-section form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+/* animação copyright*/
+.footer-bottom p {
+    font-size: 0.8em;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom p:hover {
+    color: #C65227; /* Muda de cor ao passar o mouse */
+}
+
+footer {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave acima do footer */
+    border-top: 2px solid #ccc; /* Linha verde no topo do footer */
+}

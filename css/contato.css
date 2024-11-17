@@ -1,26 +1,254 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    margin: 0px;
 }
-.pai{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #F2F2F2;
+
+/* Estilizando o contêiner principal */
+.pai {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    margin-right: 403px;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Estilizando o texto principal */
+.text {
+    margin-top: 50px;
+    margin-left: 410px;
+    margin-right: 50px;
+}
+
+.topicText {
+    font-family: "Anton", sans-serif;
+    font-size: 65px;
+}
+
+.textinf {
+    font-size: 29px;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/* Estilizando a imagem redonda */
+.img-redonda {
+    margin-top: 107px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Container de contato */
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 50px;
     background-color: #F2F2F2;
 }
+
+/* Containers de contato individuais */
+.contato, .localizacao, .horario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120px;
+    width: 350px; /* Ajusta a largura dos cards */
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.contato:hover, .localizacao:hover, .horario:hover {
+    transform: translateY(-10px);  /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Sombra mais forte ao passar o mouse */
+}
+
+/* Ajuste para a imagem de localização */
+.image-localizacao {
+    margin-left: -15px;
+    margin-top: -5px;
+    width: 100%;
+}
+
+/* Estilização dos textos de contato */
+.numero-contato, .horas {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    width:100%;
+}
+
+.tel-text, .text-horario {
+    font-size: 14px;
+    margin-left: -100px;
+    
+}
+.text-local{
+    margin-left: -100px;
+    width: 100%;
+
+
+}
+.inflocal{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 80px;
+    flex-direction: row;
+    height: auto;
+}
+/* Estilização da seção de contato */
+.header-formulario {
+    background-color: #F2F2F2;
+    height: auto;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.opa {
+    height: 200vh;
+    margin-top: 100px;
+}
+
+/* Estilização do tópico de formulário */
+.topic-forms {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de contato */
+.sessao-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Ajuste do formulário de contato */
+.contato-form {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.contato-form h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.contato-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contato-form input, .contato-form textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contato-form input:focus, .contato-form textarea:focus {
+    outline: none;
+    border-color: #F65D08;
+}
+
+/* Botão de envio */
+.contato-form input[type="submit"] {
+    background-color: #F65D08;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contato-form input[type="submit"]:hover {
+    background-color: #C65227;
+}
+
+/* Campo de texto (textarea) */
+.contato-form textarea {
+    height: 130px;
+}
+
+/* Responsividade */
+@media (max-width: 912px) {
+    .contato-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .container{
+    flex-direction: column;
+        
+    }
+    .contato-details img {
+        display: none;
+
+    }
+    .contato-form {
+        width: 90%;
+    }
+
+    .contato, .localizacao, .horario {
+        width: 90%;
+    }
+   
+}
+
+.contato-details {
+    width: 70%;
+    text-align: center;
+
+}
+
+.contato-details h2 {
+    margin-bottom: 20px;
+}
+
+.contato-details img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
 
 a.navbar-brand {
    
@@ -175,29 +403,17 @@ nav.rolagem{
         height: auto; /* Ajusta a altura automaticamente para telas menores */
         font-size: 1.2rem; /* Reduz o tamanho da fonte em dispositivos menores */
         padding: 40px; /* Ajusta o espaçamento interno */
+
+
     }
-
-    .img1 img {
-        display: none;
-        
-       }
-       .imge{
-        display: none;
-
-       }
-      .manda {
-        display: flex; /* Permite que os elementos empilhem em uma coluna */
-        width: 100%;
-        flex-direction: column;
-    }
- /* Ajuste o formulário para ocupar 100% da largura */
- .support-form {
-    background-color: #333333;
-    padding: 20px;
-    max-width: 100%; /* Define que o formulário ocupará metade da largura */
-    border-radius: 10px;
-
 }
+
+.hr{
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   color: black;
 }
 /* navbar */
 
@@ -299,161 +515,4 @@ nav.rolagem{
     font-weight: bold; /* Torna o link ativo mais destacado */
     border-bottom: 2px solid #1db954; /* Linha abaixo do item ativo */
 }
-
-
-
-
-
-
-
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #003366;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.support-info {
-    font-family: "Roboto Slab", serif;
-    text-align: center; 
-    font-size: 100px;
-    color: black;
-    margin-bottom: 50px;
-}
-hr {
-    border: none; /* Remove a borda padrão */
-    height: 2px; /* Define a espessura da linha */
-    background-color: #000; /* Cor preta */
-    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
-    position: relative; /* Necessário para o efeito de sombra */
-}
-
-hr::before {
-    content: ''; /* Cria um pseudo-elemento antes da linha */
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.2); /* Sombra suave */
-    transform: translateY(-50%);
-}
-
-
-.support-info h2 {
-    color: #333;
-    color: black;
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.support-info p {
-    font-size: 1.1rem;
-    text-align: justify;
-    color: #666;
-}
-
-.manda {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    }
-    
-.imge{
-    background-color: #15AEBF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 900px;
-    max-height: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-.support-form {
-    background-color: #333333;
-    padding: 20px;
-    width: 100%; /* Define que o formulário ocupará metade da largura */
-    border-radius: 10px;
-
-}
-
-.img1 {
-    width: 50%; /* Define que a imagem ocupará metade da largura */
-}
-
-.img1 img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
-    border-radius: 10px;
-    object-fit: cover; /* Mantém a imagem proporcional */
-}
-
-.support-form h2 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.support-form form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.support-form label {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #ddd;
-}
-
-.support-form input,
-.support-form textarea,
-.support-form select {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #444;
-}
-
-.support-form button {
-    padding: 10px;
-    background-color: #F65D08;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* .support-form button:hover {
-    background-color: #C65227;
-}
-
-.support-form input, .support-form textarea, .support-form select{
-    outline: none;
-    border-color: #F65D08;
-} */
-
-
-
-
-
 
