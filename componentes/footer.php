@@ -17,8 +17,8 @@
       <h3>Links Úteis</h3>
       <ul>
         <li><a href="#">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="./contato.php">Contato</a></li>
+        <li><a href=".././site/sobre.php">Serviços</a></li>
+        <li><a href=".././site/contato.php">Contato</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
     </div>

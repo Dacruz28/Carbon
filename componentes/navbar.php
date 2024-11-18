@@ -23,7 +23,7 @@
           <a class="nav-link" href="./home.php"><i class="fas fa-home"></i> Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre nós</a>
+          <a class="nav-link" href="../site/sobre.php">Sobre nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../site/servicos.php">Serviços</a>

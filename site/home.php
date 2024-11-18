@@ -81,17 +81,20 @@ include_once('.././componentes/navbar.php');
     </div>  
     
     <div class="conteudo">
-        <p2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius, sapien quis hendrerit porttitor, lacus metus finibus urna, vitae commodo nulla velit id quam. Maecenas in aliquam ex, vel gravida odio. Pellentesque consectetur, purus vitae consectetur lobortis, nunc erat accumsan odio, vitae commodo libero felis eu eros. Morbi ac sapien ut sem vehicula fringilla. Morbi id velit ullamcorper, vehicula justo nec, efficitur massa. Mauris justo nisi, fringilla ac leo sit amet, vulputate ornare ante. Etiam dignissim felis elit.</p2>
+        <p2> Somos uma empresa dedicada a desenvolver soluções tecnológicas inovadoras, com o propósito de tornar o cotidiano mais eficiente e acessível. Nosso compromisso com a excelência e a modernização nos permite criar produtos e serviços que atendem às demandas de um mercado em constante evolução.
+Com uma equipe experiente e focada em resultados, acreditamos que a tecnologia deve ser sinônimo de liberdade e praticidade, simplificando processos e melhorando a qualidade de vida. 
+Nosso foco está em construir parcerias sólidas e oferecer ferramentas que realmente façam a diferença para nossos clientes.
+            </p2>
     </div>
   </div>
 
   <div class="box2">
-  <a href="#">
+  <a href="./sobre.php">
     <div class="card3">
         <img class="card-img-top" src="../img/Sobre nos.jpg  " alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Sobre nós</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Nulla 
+            <p class="card-text">Somos uma empresa focada em criar soluções tecnológicas inovadoras para tornar o cotidiano mais eficiente e acessível.
             </p>
         
            
@@ -103,18 +106,18 @@ include_once('.././componentes/navbar.php');
         <img class="card-img-top" src="../img/contato2.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title1">Contatos</h5>
-            <p class="card-text1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae   </p>
+            <p class="card-text1"> Entre em contato com a Carbon. Estamos prontos para atender suas necessidades com eficiência e agilidade.   </p>
         </div>
         </a>
 
     </div>
-    <a href="#">
+    <a href="./servicos.php">
 
     <div class="card3">
         <img class="card-img-top" src="../img/suporte.jpeg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Serviços</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Nulla 
+            <p class="card-text">Conheça os projetos da Carbon, desenvolvidos para transformar ideias em soluções inovadoras.
 
             </p>
 

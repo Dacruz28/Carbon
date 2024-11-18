@@ -29,3 +29,11 @@ hr{
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+@media (max-width: 768px) {
+
+        .hr{
+            display: none;
+        }
+
+    }

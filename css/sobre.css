@@ -1,0 +1,65 @@
+/* Defina o fundo da página */
+.background-image-div {
+  background-color: #d3d8de; /* Cor de fundo parecida com a Home */
+  padding: 20px;
+}
+
+.container {
+  padding-bottom: 20px;
+}
+
+/* Estilos do cabeçalho */
+.cabeçalho {
+  color: #333333;
+  padding: 40px;
+}
+
+.cabeçalho h1 {
+  font-size: 2.5rem;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+/* Seções de Sobre, Missão e Valores */
+.oq-fazemos, .a, .b1 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.oq-fazemos h2, .a1 h2, .b1-content h2 {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.oq-fazemos p, .a1 p, .b1-content p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+
+
+/* Alinhamento e estrutura para layout responsivo */
+.a, .b1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.a1, .b1-content {
+  max-width: 600px;
+}
+
+/* Responsividade: Media Queries */
+
+/* Para dispositivos menores que 768px (tablets e smartphones em modo paisagem) */
+@media (max-width: 768px) {
+ 
+.imgs{
+  display:none;
+}
+
+}
